@@ -1,0 +1,38 @@
+<nav class="bg-neutral-900 w-full py-8 fixed top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between px-10 md:px-32">
+        <a href="#" class="text-white text-xl font-bold">    <div class="flex text-2xl">
+            <h2>&lt;Lucen<span class="text-red-500">Dev</span>/&gt;</h2>
+        </div></a>
+
+        <div class="lg:hidden">
+            <button id="burger-menu" class="text-white focus:outline-none">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+
+        <div class="hidden lg:flex space-x-4 md:gap-10">
+            <a href="/" class="">Home</a>
+            <a href="/about" class="">About Me</a>
+            <a href="/portfolio" class="">Portfolio</a>
+            <a href="/contact" class="">Contact</a>
+        </div>
+    </div>
+</nav>
+
+<div id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 hidden">
+    <div class="flex items-center justify-end p-4">
+        <button id="close-menu" class="text-white">
+            <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+    </div>
+    <div class="flex flex-col items-center">
+        <a href="/" class="">Home</a>
+        <a href="/about" class="">About Me</a>
+        <a href="/portfolio" class="">Portfolio</a>
+        <a href="/contact" class="">Contact</a>
+    </div>
+</div>

@@ -1,0 +1,85 @@
+---
+import SectionTitle from "./UI/SectionTitle.astro";
+import Button from "./UI/Button.astro";
+import TechToken from "./UI/TechToken.astro";
+
+---
+
+
+<section class="flex flex-col justify-center md:flex-row mx-auto">
+        <div class="md:w-1/2">
+            <div class="flex justify-center items-center">
+                <SectionTitle>About Me</SectionTitle>
+            </div>
+            <p class="text-start px-14 md:px-48 py-4 text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut voluptatibus dolore consequuntur aliquam est ullam repellat doloremque, fugiat amet, quos assumenda sequi quis quo optio id excepturi maiores? Unde.
+            </p>
+            <p class="text-start px-14 md:px-48  py-4 text-xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut voluptatibus dolore consequuntur aliquam est ullam repellat doloremque, fugiat amet, quos assumenda sequi quis quo optio id excepturi maiores? Unde.
+            </p>
+            <div class="flex justify-center items-center py-8 ">
+                <Button>Download my resume</Button>
+            </div>
+        </div>
+    <div class="pt-14 md:pt-0 md:mr-32 flex flex-col">
+        <div class="flex justify-center  md:items-start md:justify-start md:pl-10">
+            <SectionTitle>Tech Stack</SectionTitle>
+        </div>
+        <div class="flex flex-col justify-center items-start px-14 ">
+            <h2 class="py-8 text-2xl text-start">Front End:</h2>
+            <div class="gap-4 flex flex-wrap">
+                <TechToken>
+                    <img src="public/html.svg" alt="html">
+                </TechToken>
+                <TechToken>
+                    <img src="public/css.svg" alt="css">
+                </TechToken>
+                <TechToken>
+                    <img src="public/javascript.svg" alt="javascript">
+                </TechToken>
+                <TechToken>
+                    <img src="public/react.svg" alt="react">
+                </TechToken>
+                <TechToken>
+                    <img src="public/tailwind.svg" alt="tailwind">
+                </TechToken>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-start px-14 ">
+            <h2 class="py-8 text-2xl text-start">Back End:</h2>
+            <div class="gap-4 flex flex-wrap">
+                <TechToken>
+                    <img src="public/node.svg" alt="node">
+                </TechToken>
+                <TechToken>
+                    <img src="public/mysql.svg" alt="mysql">
+                </TechToken>
+                <TechToken>
+                    <img src="public/java.svg" alt="java">
+                </TechToken>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-start px-14 ">
+            <h2 class="py-8 text-2xl text-start">Design:</h2>
+            <div class="gap-4 flex flex-wrap">
+                <TechToken>
+                    <img src="public/photoshop.svg" alt="photoshop">
+                </TechToken>
+                <TechToken>
+                    <img src="public/figma.svg" alt="figma">
+                </TechToken>
+            </div>
+        </div>
+        <div class="flex flex-col justify-center items-start px-14 ">
+            <h2 class="py-8 text-2xl text-start">Other Tools:</h2>
+            <div class="gap-4 flex flex-wrap">
+                <TechToken>
+                    <img src="public/postman.svg" alt="postman">
+                </TechToken>
+                <TechToken>
+                    <img src="public/git.svg" alt="git">
+                </TechToken>
+            </div>
+        </div>
+    </div>
+</section>

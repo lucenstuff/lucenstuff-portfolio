@@ -1,0 +1,24 @@
+---
+import Button from "./UI/Button.astro";
+
+---
+
+<hero class="flex justify-center items-center h-screen flex-col md:flex-row max-h-screen pt-14">
+    <div class="md:px-10 px-10">
+        <img class="drop-shadow-xl " src="public/lucenstuff-avatar.svg" alt="avatar">
+    </div>
+    <div class="md:px-20 md:text-5xl text-3xl py-10 flex flex-col justify-center">
+        <h1 >Hello, I’m <span class="font-semibold ">Agustín <br> Lucentini</span></h1>
+        <h1 class="text-red-500 font-semibold">Full Stack Developer</h1>
+        <div class="flex gap-4 my-10">
+            <a href="">
+                <img src="public/linkedin.svg" alt="linkedin">
+            </a>
+            <a href="">
+                <img src="public/github.svg" alt="github">
+            </a>
+            
+        </div>
+        <Button>See my portfolio</Button>
+    </div>
+</hero>
