@@ -1,13 +1,23 @@
 ---
-import PoryectContainer from "./UI/PoryectContainer.astro";
+import PorjectContainer from "./UI/PorjectContainer.astro";
 import SectionTitle from "./UI/SectionTitle.astro";
 ---
 
-<section class="flex flex-col justify-center md:flex-row mx-auto py-10 ">
-    <div class="md:w-1/2">
-        <div class="flex flex-col justify-center items-center">
-            <SectionTitle>Portfolio</SectionTitle>
-            <PoryectContainer />
-            <PoryectContainer />
-        </div>
-<section/>
+<section class="flex flex-col justify-center md:flex-row mx-auto py-10">
+  <div class="md:w-1/2">
+    <div class="flex flex-col justify-center items-center">
+      <SectionTitle>Portfolio</SectionTitle>
+      <PorjectContainer
+        title="Project #1: Gamers Vault"
+        img="src/img/gamersvault_screenshot.jpg"
+        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quia, obcaecati porro fuga molestias atque consequatur ipsam illo doloremque, soluta, unde nulla blanditiis. Quis voluptates nulla recusandae, ratione non nam."
+      />
+      <PorjectContainer
+        title="Project #2: GreenTrace"
+        img="src/img/greentrace_screenshot.jpg"
+        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quia, obcaecati porro fuga molestias atque consequatur ipsam illo doloremque, soluta, unde nulla blanditiis. Quis voluptates nulla recusandae, ratione non nam."
+      />
+    </div>
+    <section></section>
+  </div>
+</section>

@@ -1,5 +1,6 @@
-<nav class="bg-neutral-900 w-full py-8 fixed top-0 z-50">
-    <div class="container mx-auto flex items-center justify-between px-10 md:px-32">
+<!-- 
+<nav class="bg-neutral-900 w-full py-8 fixed top-0 z-10">
+    <div class="container mx-auto flex items-center justify-between px-10 lg:px-32">
         <a href="/" class="text-white text-xl font-bold">    <div class="flex text-2xl">
             <h2>&lt;Lucen<span class="text-red-500">Dev</span>/&gt;</h2>
         </div></a>
@@ -12,16 +13,16 @@
             </button>
         </div>
 
-        <div class="hidden lg:flex space-x-4 md:gap-10">
-            <a href="/" class="">Home</a>
-            <a href="/about" class="">About Me</a>
-            <a href="/portfolio" class="">Portfolio</a>
-            <a href="/contact" class="">Contact</a>
+        <div class="hidden lg:flex space-x-4 lg:gap-10 ">
+            <a href="/" class="hover:underline">Home</a>
+            <a href="/about" class="hover:underline">About Me</a>
+            <a href="/portfolio" class="hover:underline">Portfolio</a>
+            <a href="/contact" class="hover:underline">Contact</a>
         </div>
     </div>
 </nav>
 
-<div id="mobile-menu" class="lg:hidden fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-75 hidden">
+<div id="mobile-menu" class="lg:hidden fixed top-0 z-50 left-0 w-full h-full bg-gray-800 hidden">
     <div class="flex items-center justify-end p-4">
         <button id="close-menu" class="text-white">
             <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -36,3 +37,88 @@
         <a href="/contact" class="">Contact</a>
     </div>
 </div>
+
+<script>
+    const burgerMenu = document.getElementById('burger-menu');
+    const closeMenu = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    burgerMenu.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+    })
+
+    closeMenu.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    })
+</script>
+ -->
+<header>
+  <div class="bg-neutral-900 w-full py-8 fixed top-0 z-10 drop-shadow-sm">
+    <div
+      class="container mx-auto flex items-center justify-between px-10 lg:px-32"
+    >
+      <a href="/" class="text-white text-xl font-bold">
+        <div class="flex text-2xl">
+          <h2>&lt;Lucen<span class="text-red-500">Dev</span>/&gt;</h2>
+        </div></a
+      >
+      <button id="burger-menu" class="lg:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          ><path
+            fill="currentColor"
+            fill-rule="evenodd"
+            d="M3.5 5a1 1 0 0 0 0 2h17a1 1 0 1 0 0-2zm-1 7a1 1 0 0 1 1-1h17a1 1 0 1 1 0 2h-17a1 1 0 0 1-1-1m0 6.001a1 1 0 0 1 1-1h17a1 1 0 1 1 0 2h-17a1 1 0 0 1-1-1"
+            clip-rule="evenodd"></path></svg
+        >
+      </button>
+      <button id="close-menu" class="hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="32"
+          height="32"
+          viewBox="0 0 24 24"
+          ><path
+            fill="currentColor"
+            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12z"
+          ></path></svg
+        >
+      </button>
+      <div class="hidden lg:flex space-x-4 lg:gap-10">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/about" class="hover:underline">About Me</a>
+        <a href="/portfolio" class="hover:underline">Portfolio</a>
+        <a href="/contact" class="hover:underline">Contact</a>
+      </div>
+    </div>
+    <div id="mobile-menu" class="hidden">
+      <ul class="flex flex-col items-center gap-8 pt-8">
+        <a href="/" class="hover:underline">Home</a>
+        <a href="/about" class="hover:underline">About Me</a>
+        <a href="/portfolio" class="hover:underline">Portfolio</a>
+        <a href="/contact" class="hover:underline">Contact</a>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<script>
+  const burgerMenu = document.getElementById("burger-menu");
+  const closeMenu = document.getElementById("close-menu");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  burgerMenu.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+    closeMenu.classList.remove("hidden");
+    burgerMenu.classList.add("hidden");
+  });
+
+  closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+    closeMenu.classList.add("hidden");
+    burgerMenu.classList.remove("hidden");
+  });
+</script>
