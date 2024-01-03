@@ -6,19 +6,19 @@ import TechToken from "./UI/TechToken.astro";
 
 <section
   id="about"
-  class="flex flex-col justify-center md:flex-row mx-auto py-32"
+  class="flex flex-col justify-center lg:flex-row mx-auto py-32"
 >
-  <div class="md:w-1/2">
+  <div class="w-full lg:w-1/2">
     <div class="flex justify-center items-center">
       <SectionTitle>About Me</SectionTitle>
     </div>
-    <p class="text-start px-14 md:px-48 py-4 text-xl">
+    <p class="text-start px-14 lg:px-48 py-4 text-xl">
       I'm a passionate web developer deeply committed to clean design,
       meticulous code, and a strong work ethic. Considering myself a fast
       learner and a dedicated team player, I bring a unique blend of
       adaptability and efficiency to every project.
     </p>
-    <p class="text-start px-14 md:px-48 py-4 text-xl">
+    <p class="text-start px-14 lg:px-48 py-4 text-xl">
       My primary focus is on delivering clean, functional web solutions where I
       consistently produce high-quality results within tight deadlines. If
       you're seeking a developer who combines technical excellence with a
@@ -32,63 +32,65 @@ import TechToken from "./UI/TechToken.astro";
       />
     </div>
   </div>
-  <div class="pt-14 md:pt-0 md:mr-32 flex flex-col">
-    <div class="flex justify-center md:items-start md:justify-start md:pl-10">
+  <div class="pt-14 lg:pt-0 lg:mr-32 flex flex-col">
+    <div class="flex justify-center lg:items-start lg:justify-start lg:pl-10">
       <SectionTitle>Tech Stack</SectionTitle>
     </div>
-    <div class="flex flex-col justify-center items-start px-14">
+    <div
+      class="flex flex-col justify-center items-center lg:items-start lg:px-14"
+    >
       <h2 class="py-8 text-2xl text-start">Front End:</h2>
       <div class="gap-4 flex flex-wrap">
         <TechToken>
-          <img src="src/img/html.svg" alt="html" />
+          <img src="src/html.svg" alt="html" />
         </TechToken>
         <TechToken>
-          <img src="src/img/css.svg" alt="css" />
+          <img src="src/css.svg" alt="css" />
         </TechToken>
         <TechToken>
-          <img src="src/img/javascript.svg" alt="javascript" />
+          <img src="src/javascript.svg" alt="javascript" />
         </TechToken>
         <TechToken>
-          <img src="src/img/react.svg" alt="react" />
+          <img src="src/react.svg" alt="react" />
         </TechToken>
         <TechToken>
-          <img src="src/img/tailwind.svg" alt="tailwind" />
+          <img src="src/tailwind.svg" alt="tailwind" />
         </TechToken>
       </div>
     </div>
-    <div class="flex flex-col justify-center items-start px-14">
+    <div class="flex flex-col justify-center items-center lg:items-start px-14">
       <h2 class="py-8 text-2xl text-start">Back End:</h2>
       <div class="gap-4 flex flex-wrap">
         <TechToken>
-          <img src="src/img/node.svg" alt="node" />
+          <img src="src/node.svg" alt="node" />
         </TechToken>
         <TechToken>
-          <img src="src/img/mysql.svg" alt="mysql" />
+          <img src="src/mysql.svg" alt="mysql" />
         </TechToken>
         <TechToken>
-          <img src="src/img/java.svg" alt="java" />
+          <img src="src/java.svg" alt="java" />
         </TechToken>
       </div>
     </div>
-    <div class="flex flex-col justify-center items-start px-14">
+    <div class="flex flex-col justify-center items-center lg:items-start px-14">
       <h2 class="py-8 text-2xl text-start">Design:</h2>
       <div class="gap-4 flex flex-wrap">
         <TechToken>
-          <img src="src/img/photoshop.svg" alt="photoshop" />
+          <img src="src/photoshop.svg" alt="photoshop" />
         </TechToken>
         <TechToken>
-          <img src="src/img/figma.svg" alt="figma" />
+          <img src="src/figma.svg" alt="figma" />
         </TechToken>
       </div>
     </div>
-    <div class="flex flex-col justify-center items-start px-14">
+    <div class="flex flex-col justify-center items-center lg:items-start px-14">
       <h2 class="py-8 text-2xl text-start">Other Tools:</h2>
       <div class="gap-4 flex flex-wrap">
         <TechToken>
-          <img src="src/img/postman.svg" alt="postman" />
+          <img src="src/postman.svg" alt="postman" />
         </TechToken>
         <TechToken>
-          <img src="src/img/git.svg" alt="git" />
+          <img src="src/git.svg" alt="git" />
         </TechToken>
       </div>
     </div>

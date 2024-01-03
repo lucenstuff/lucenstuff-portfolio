@@ -73,6 +73,7 @@
   const burgerMenu = document.getElementById("burger-menu");
   const closeMenu = document.getElementById("close-menu");
   const mobileMenu = document.getElementById("mobile-menu");
+  const links = document.querySelectorAll("a");
 
   burgerMenu.addEventListener("click", () => {
     mobileMenu.classList.remove("hidden");
@@ -84,5 +85,15 @@
     mobileMenu.classList.add("hidden");
     closeMenu.classList.add("hidden");
     burgerMenu.classList.remove("hidden");
+  });
+
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      setTimeout(() => {
+        mobileMenu.classList.add("hidden");
+        closeMenu.classList.add("hidden");
+        burgerMenu.classList.remove("hidden");
+      }, 250);
+    });
   });
 </script>

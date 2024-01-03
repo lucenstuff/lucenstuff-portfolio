@@ -7,32 +7,31 @@ import Button from "./UI/Button.astro";
   class="flex justify-center items-center h-screen flex-col my-24 py-32 lg:flex-row"
 >
   <div class="lg:px-10 px-10">
-    <img
-      src="src/img/Cute Avatar.png"
-      class="drop-shadow-lg"
-      width="400"
-      alt="avatar"
-    />
+    <img src="src/avatar.png" width="400px" height="400px" alt="" />
   </div>
   <div class="lg:px-20 lg:text-5xl text-3xl py-10 flex flex-col justify-center">
     <h1>
-      Hello, I’m <span class="font-semibold">Agustín <br /> Lucentini</span>
+      Hello, I’m <span class="font-semibold typewriter"
+        >Agustín <br /> Lucentini</span
+      >
     </h1>
-    <h1 class="text-red-500 font-semibold">Full Stack Developer</h1>
+    <h1 class="typewriter-effect text-red-500 font-semibold">
+      Full Stack Developer
+    </h1>
     <div class="flex gap-4 my-10">
       <button
         class="hover:scale-105 transition-all hover:opacity-80"
         aria-label="LinkedIn"
         onclick="window.location.href = 'https://www.linkedin.com/in/agust%C3%ADn-lucentini-055832276/'"
       >
-        <img src="src/img/linkedin.svg" alt="LinkedIn" />
+        <img src="src/linkedin.svg" width="40px" height="40px" alt="LinkedIn" />
       </button>
       <button
         class="hover:scale-105 transition-all hover:opacity-80"
         aria-label="GitHub"
         onclick="window.location.href = 'https://github.com/lucenstuff'"
       >
-        <img src="src/img/github.svg" alt="GitHub" />
+        <img src="src/github.svg" width="40px" height="40px" alt="GitHub" />
       </button>
     </div>
     <Button
@@ -41,3 +40,34 @@ import Button from "./UI/Button.astro";
     />
   </div>
 </hero>
+
+<style>
+  @keyframes typewriter {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #e5e5e5;
+    }
+  }
+
+  .typewriter-effect {
+    display: inline-block;
+    border-right: 3px solid #e5e5e5;
+    white-space: nowrap;
+    overflow: hidden;
+    animation:
+      typewriter 4s steps(40) 0s forwards,
+      blink-caret 0.75s step-end infinite 4.3s;
+  }
+</style>
