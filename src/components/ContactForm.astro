@@ -7,53 +7,61 @@ import Button from "./UI/Button.astro";
   id="contact"
   class="flex flex-col justify-center md:flex-row mx-10 py-32 text-neutral-200 overflow-hidden"
 >
-  <div class="md:block md:w-1/2">
-    <div class="flex flex-col justify-center items-center">
+  <div class="md:w-1/2">
+    <div class="flex flex-col justify-center items-center mb-8">
       <SectionTitle>Contact Me</SectionTitle>
     </div>
-    <div>
-      <form
-        class="w-full"
-        action="https://formsubmit.co/your@email.com"
-        method="POST"
-      >
-        <div class="mb-4">
-          <label for="name" class="block text-sm font-bold mb-2">Name</label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            class="bg-neutral-800 border border-red-500 rounded w-full py-2 px-3"
-            placeholder="Enter your name"
-          />
-        </div>
-        <div class="mb-4">
-          <label for="name" class="block text-sm font-bold mb-2">Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            class="bg-neutral-800 border border-red-500 rounded w-full py-2 px-3"
-            placeholder="Enter your email"
-          />
-        </div>
-        <div class="mb-6">
-          <label for="message" class="block text-sm font-bold mb-2"
-            >Message</label
-          >
-          <textarea
-            id="message"
-            name="message"
-            rows="10"
-            class="bg-neutral-800 w-full border border-red-500 p-2 rounded-md"
-            placeholder="Your Message"
-            required></textarea>
-        </div>
-        <div class="flex justify-center items-center py-8">
-          <Button>Submit</Button>
-        </div>
-      </form>
-    </div>
-    <section></section>
+    <form
+      class="w-full"
+      action="https://api.web3forms.com/submit"
+      method="POST"
+    >
+      <input
+        type="hidden"
+        name="access_key"
+        value="7f496c14-8590-4c2b-a8ee-7fc1fcc82303"
+      />
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-bold mb-2">Name</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          class="bg-neutral-800 border border-red-500 rounded w-full py-2 px-3"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-bold mb-2">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          class="bg-neutral-800 border border-red-500 rounded w-full py-2 px-3"
+          placeholder="Enter your email"
+          required
+        />
+      </div>
+      <div class="mb-6">
+        <label for="message" class="block text-sm font-bold mb-2">Message</label
+        >
+        <textarea
+          id="message"
+          name="message"
+          rows="10"
+          class="bg-neutral-800 w-full border border-red-500 p-2 rounded-md"
+          placeholder="Your Message"
+          required></textarea>
+      </div>
+      <input
+        type="hidden"
+        name="redirect"
+        value="https://web3forms.com/success"
+      />
+      <div class="flex justify-center items-center py-8">
+        <Button type="submit">Submit</Button>
+      </div>
+    </form>
   </div>
 </section>
