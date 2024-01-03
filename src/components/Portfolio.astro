@@ -3,19 +3,24 @@ import PorjectContainer from "./UI/PorjectContainer.astro";
 import SectionTitle from "./UI/SectionTitle.astro";
 ---
 
-<section class="flex flex-col justify-center md:flex-row mx-auto py-10">
+<section
+  id="portfolio"
+  class="flex flex-col justify-center md:flex-row mx-auto py-32"
+>
   <div class="md:w-1/2">
     <div class="flex flex-col justify-center items-center">
       <SectionTitle>Portfolio</SectionTitle>
       <PorjectContainer
         title="Project #1: Gamers Vault"
         img="src/img/gamersvault_screenshot.jpg"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quia, obcaecati porro fuga molestias atque consequatur ipsam illo doloremque, soluta, unde nulla blanditiis. Quis voluptates nulla recusandae, ratione non nam."
+        description="Developed a personal e-commerce project with Vanilla Web Components, HTML, CSS, and JavaScript on the front-end, and an Express.js back-end. Designed intuitive interfaces for a seamless user experience and integrated front-end with Express.js for efficient data flow and server-side functionalities."
+        onClick=""
       />
       <PorjectContainer
         title="Project #2: GreenTrace"
         img="src/img/greentrace_screenshot.jpg"
-        description="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore quia, obcaecati porro fuga molestias atque consequatur ipsam illo doloremque, soluta, unde nulla blanditiis. Quis voluptates nulla recusandae, ratione non nam."
+        description="Participated in the design and development of the development for a carbon footprint calculator project, employing React, TypeScript, and Tailwind CSS. This project not only expanded skills in React, TypeScript, and Tailwind CSS but also contributed to environmental awareness by promoting sustainable practices."
+        onClick="window.location.href = 'https://c15-04-m-node-react.vercel.app/' "
       />
     </div>
     <section></section>

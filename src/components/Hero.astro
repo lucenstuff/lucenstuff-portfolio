@@ -3,28 +3,41 @@ import Button from "./UI/Button.astro";
 ---
 
 <hero
-  class="flex justify-center items-center h-screen flex-col mt-14 md:flex-row"
+  id="hero"
+  class="flex justify-center items-center h-screen flex-col my-24 py-32 lg:flex-row"
 >
-  <div class="md:px-10 px-10">
+  <div class="lg:px-10 px-10">
     <img
-      class="drop-shadow-xl"
-      src="src/img//lucenstuff-avatar.svg"
+      src="src/img/Cute Avatar.png"
+      class="drop-shadow-lg"
+      width="400"
       alt="avatar"
     />
   </div>
-  <div class="md:px-20 md:text-5xl text-3xl py-10 flex flex-col justify-center">
+  <div class="lg:px-20 lg:text-5xl text-3xl py-10 flex flex-col justify-center">
     <h1>
       Hello, I’m <span class="font-semibold">Agustín <br /> Lucentini</span>
     </h1>
     <h1 class="text-red-500 font-semibold">Full Stack Developer</h1>
     <div class="flex gap-4 my-10">
-      <button>
-        <img src="src/img/linkedin.svg" alt="linkedin" />
+      <button
+        class="hover:scale-105 transition-all hover:opacity-80"
+        aria-label="LinkedIn"
+        onclick="window.location.href = 'https://www.linkedin.com/in/agust%C3%ADn-lucentini-055832276/'"
+      >
+        <img src="src/img/linkedin.svg" alt="LinkedIn" />
       </button>
-      <button>
-        <img src="src/img/github.svg" alt="github" />
+      <button
+        class="hover:scale-105 transition-all hover:opacity-80"
+        aria-label="GitHub"
+        onclick="window.location.href = 'https://github.com/lucenstuff'"
+      >
+        <img src="src/img/github.svg" alt="GitHub" />
       </button>
     </div>
-    <Button>See my portfolio</Button>
+    <Button
+      text="See my projects"
+      onClick="window.location.href = '#portfolio'"
+    />
   </div>
 </hero>

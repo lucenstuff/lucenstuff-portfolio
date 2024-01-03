@@ -4,25 +4,32 @@ import Button from "./UI/Button.astro";
 import TechToken from "./UI/TechToken.astro";
 ---
 
-<section class="flex flex-col justify-center md:flex-row mx-auto">
+<section
+  id="about"
+  class="flex flex-col justify-center md:flex-row mx-auto py-32"
+>
   <div class="md:w-1/2">
     <div class="flex justify-center items-center">
       <SectionTitle>About Me</SectionTitle>
     </div>
     <p class="text-start px-14 md:px-48 py-4 text-xl">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut
-      voluptatibus dolore consequuntur aliquam est ullam repellat doloremque,
-      fugiat amet, quos assumenda sequi quis quo optio id excepturi maiores?
-      Unde.
+      I'm a passionate web developer deeply committed to clean design,
+      meticulous code, and a strong work ethic. Considering myself a fast
+      learner and a dedicated team player, I bring a unique blend of
+      adaptability and efficiency to every project.
     </p>
     <p class="text-start px-14 md:px-48 py-4 text-xl">
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut
-      voluptatibus dolore consequuntur aliquam est ullam repellat doloremque,
-      fugiat amet, quos assumenda sequi quis quo optio id excepturi maiores?
-      Unde.
+      My primary focus is on delivering clean, functional web solutions where I
+      consistently produce high-quality results within tight deadlines. If
+      you're seeking a developer who combines technical excellence with a
+      proactive, enthusiastic attitude, I'm eager to bring my skills and passion
+      to your team.
     </p>
     <div class="flex justify-center items-center py-8">
-      <Button>Download my resume</Button>
+      <Button
+        text="Download my resume"
+        onClick="window.location.href = 'https:s2.q4cdn.com/175719177/files/doc_presentations/Placeholder-PDF.pdf'"
+      />
     </div>
   </div>
   <div class="pt-14 md:pt-0 md:mr-32 flex flex-col">

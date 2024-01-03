@@ -1,3 +1,11 @@
-<button class="bg-red-500 py-3 px-14 rounded-md font-medium text-lg shadow-md text-neutral-200 hover:bg-red-600">
-    <slot>
+---
+const { text, onClick } = Astro.props;
+---
+
+<button
+  id="button"
+  class="bg-red-500 py-3 px-14 rounded-md font-medium text-lg shadow-md text-neutral-200 hover:bg-red-600"
+  onclick={onClick}
+>
+  <slot>{text}</slot>
 </button>
